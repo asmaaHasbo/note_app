@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:touko/features/home_screen/widgets/search_icon.dart';
 
 PreferredSizeWidget customAppBar(){
   return  AppBar(
@@ -7,18 +8,7 @@ PreferredSizeWidget customAppBar(){
       style: TextStyle(fontSize: 24),
     ),
     actions: [
-      IconButton(
-          onPressed: () {},
-          icon: Container(
-            height: 50,
-            width: 40,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14),
-                  color: Colors.grey.withOpacity(.5)),
-              child: const Icon(
-                Icons.search,
-                color: Colors.white,
-              ))),
+     searchIcon(),
     ],
   );
 
