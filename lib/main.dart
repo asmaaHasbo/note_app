@@ -8,7 +8,7 @@ class NoteApp extends StatelessWidget {
   const NoteApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home:Text('hi')
     );
