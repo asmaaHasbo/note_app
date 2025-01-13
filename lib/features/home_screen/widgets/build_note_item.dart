@@ -10,7 +10,7 @@ class BuildNoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 16.0),
+      padding: const EdgeInsets.only(bottom: 10.0),
       child: Container(
         padding: const EdgeInsets.only(top: 20 , bottom: 25 , left: 20 , right: 15),
         decoration: BoxDecoration(
