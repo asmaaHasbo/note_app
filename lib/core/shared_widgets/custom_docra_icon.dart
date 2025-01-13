@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Padding searchIcon() {
+Padding customAppBarIcon({required IconData iconName}) {
   return Padding(
     padding: const EdgeInsets.only(right: 16.0),
     child: IconButton(
@@ -11,9 +11,9 @@ Padding searchIcon() {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(14),
             color: Colors.grey.withOpacity(.5)),
-        child: const Center(
+        child: Center(
           child: Icon(
-            Icons.search,
+            iconName,
             color: Colors.white,
             size: 26,
           ),

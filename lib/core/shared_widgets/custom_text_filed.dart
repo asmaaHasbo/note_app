@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'build_outline_border.dart';
+import '../../features/home_screen/widgets/build_outline_border.dart';
 class CustomTextFiled extends StatelessWidget {
   const CustomTextFiled({
     super.key,

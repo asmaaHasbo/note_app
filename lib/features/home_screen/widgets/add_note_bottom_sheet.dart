@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'custom_elevated_button.dart';
-import 'custom_text_filed.dart';
+import '../../../core/shared_widgets/custom_text_filed.dart';
 class AddNoteBottomSheet extends StatelessWidget {
   const AddNoteBottomSheet({
     super.key,
