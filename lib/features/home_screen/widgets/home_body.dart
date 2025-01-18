@@ -8,6 +8,6 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  ListOfNoteCards(noteModel: NoteModel(noteContent: 'jjjjjjjjjjjjjjjjjjjjjj', noteTime: 'jdjjj', noteTitle: 'kkkkkkkkk'),);
+    return  ListOfNoteCards(noteModel: NoteModel(noteContent: 'jjjjjjjjjjjjjjjjjjjjjj', noteTime: 'jdjjj', noteTitle: 'kkkkkkkkk', color: 7),);
   }
 }
