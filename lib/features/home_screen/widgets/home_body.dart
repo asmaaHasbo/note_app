@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:touko/core/modules/note_model.dart';
 
 import 'list_of_note_cards.dart';
 
@@ -7,6 +8,6 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ListOfNoteCards();
+    return  ListOfNoteCards(noteModel: NoteModel(noteContent: 'jjjjjjjjjjjjjjjjjjjjjj', noteTime: 'jdjjj', noteTitle: 'kkkkkkkkk'),);
   }
 }

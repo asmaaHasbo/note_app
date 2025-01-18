@@ -1,7 +1,7 @@
 class NoteModel {
   final String noteTitle;
   final String noteContent;
-  final DateTime noteTime;
+  final String noteTime;
 
   NoteModel({
     required this.noteContent,

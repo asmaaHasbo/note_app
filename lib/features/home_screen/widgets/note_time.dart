@@ -8,7 +8,7 @@ class NoteTime extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      noteModel.noteTime as String ,
+      noteModel.noteTime,
       textAlign: TextAlign.end,
       style: TextStyle(color: Colors.black.withOpacity(.5)),
     );
