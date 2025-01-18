@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:touko/core/modules/note_model.dart';
 class NoteTitle extends StatelessWidget {
-  const NoteTitle({Key? key}) : super(key: key);
-
+  const NoteTitle({super.key, required this.noteModel});
+ final NoteModel noteModel ;
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'Flutter tip ',
-      style: TextStyle(
+    return Text(
+      noteModel.noteTitle,
+      style: const TextStyle(
           fontSize: 20,
           color: Colors.black,
           fontWeight: FontWeight.bold),

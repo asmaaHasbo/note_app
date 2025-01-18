@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:touko/core/shared_widgets/custom_app_bar.dart';
 import 'package:touko/features/edit_screen/widgets/edit_body.dart';
+import '../../core/shared_widgets/custom_app_bar.dart';
 
 class EditScreen extends StatelessWidget {
   const EditScreen({super.key});

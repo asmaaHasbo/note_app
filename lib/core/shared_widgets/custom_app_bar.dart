@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:touko/core/shared_widgets/custom_docra_icon.dart';
+
+import 'custom_docra_icon.dart';
 
 PreferredSizeWidget customAppBar({required title , required IconData iconName }) {
   return AppBar(
