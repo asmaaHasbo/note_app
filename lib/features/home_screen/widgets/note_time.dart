@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/modules/note_model.dart';
+import '../../../modules/note_model.dart';
+
 class NoteTime extends StatelessWidget {
   const NoteTime({super.key, required this.noteModel});
   final NoteModel noteModel ;

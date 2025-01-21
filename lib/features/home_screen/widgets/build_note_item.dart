@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:touko/core/modules/note_model.dart';
 
+import '../../../modules/note_model.dart';
 import '../../edit_screen/edit_screen.dart';
 import 'delete_icon.dart';
 import 'note_description.dart';

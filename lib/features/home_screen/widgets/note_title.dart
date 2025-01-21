@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:touko/core/modules/note_model.dart';
+
+import '../../../modules/note_model.dart';
 class NoteTitle extends StatelessWidget {
   const NoteTitle({super.key, required this.noteModel});
  final NoteModel noteModel ;

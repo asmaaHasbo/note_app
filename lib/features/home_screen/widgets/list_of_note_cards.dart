@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/modules/note_model.dart';
+import '../../../modules/note_model.dart';
 import 'build_note_item.dart';
 
 class ListOfNoteCards extends StatelessWidget {
