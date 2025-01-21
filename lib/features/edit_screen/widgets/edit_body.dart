@@ -6,12 +6,12 @@ class EditBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(16.0),
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          CustomTextFiled(hint:'Title'),
-          CustomTextFiled(hint:'Content' , maxLines: 5,),
+          CustomTextFiled(hint:'Title', onSaved: (value){},),
+          CustomTextFiled(hint:'Content' , maxLines: 5, onSaved: (value) {  },),
         ],
       ),
     );
