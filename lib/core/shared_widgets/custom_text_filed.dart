@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:touko/core/constant.dart';
+import 'package:touko/core/themes/colors.dart';
 
 import '../../features/home_screen/widgets/build_outline_border.dart';
 class CustomTextFiled extends StatelessWidget {
@@ -32,9 +32,9 @@ class CustomTextFiled extends StatelessWidget {
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.all(20),
           hintText: hint,
-          border:buildOutlineInputBorder(sacanderyColor) ,
-          enabledBorder: buildOutlineInputBorder(sacanderyColor),
-          focusedBorder: buildOutlineInputBorder(mainColor),
+          border:buildOutlineInputBorder(AppColors.secndaryColor) ,
+          enabledBorder: buildOutlineInputBorder(AppColors.secndaryColor),
+          focusedBorder: buildOutlineInputBorder(AppColors.mainColor),
         ),
       ),
     );
