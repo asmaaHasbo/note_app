@@ -13,6 +13,7 @@ class AddNoteBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer< AddNoteCubit , AddNoteState >(
       listener: (context, state) {
+
         if(state is AddNoteSuccess ){
           Navigator.pop(context);
         }
@@ -21,8 +22,9 @@ class AddNoteBottomSheet extends StatelessWidget {
         }
       } ,
       builder: (BuildContext context, AddNoteState state) {
+
        return ModalProgressHUD(
-         inAsyncCall: state is AddNoteLoading ? true : false  ,
+         inAsyncCall: state is AddNoteLoading ? true : false,
          child: const Padding(
             padding: EdgeInsets.all(16.0),
             child: SingleChildScrollView(
