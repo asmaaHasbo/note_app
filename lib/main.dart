@@ -21,19 +21,14 @@ class NoteApp extends StatelessWidget {
   const NoteApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-           BlocProvider(create: (context) => AddNoteCubit(),),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          brightness: Brightness.dark,
-          textTheme: GoogleFonts.poppinsTextTheme()
-        ),
-
-        home:const HomeScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        textTheme: GoogleFonts.poppinsTextTheme()
       ),
+
+      home:const HomeScreen(),
     );
   }
 }
