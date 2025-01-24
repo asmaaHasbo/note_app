@@ -13,8 +13,8 @@ class AddNoteCubit extends Cubit<AddNoteState> {
 
     try {
       emit(AddNoteLoading());
-      await Future.delayed(const Duration(seconds: 2));
-      var noteBox = Hive.box(noteBoxName);
+      await Future.delayed(const Duration(seconds: 1));
+      var noteBox = Hive.box<NoteModel>(noteBoxName);
       await noteBox.add(noteModel);
       debugPrint('SUCCESS');
       emit(AddNoteSuccess());
