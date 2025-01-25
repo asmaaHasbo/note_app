@@ -10,16 +10,17 @@ class ListOfNoteCards extends StatelessWidget {
   final NoteModel noteModel;
   @override
   Widget build(BuildContext context) {
+
     return BlocBuilder<ReadCubit, ReadState>(
       builder: (context, state) {
        List<NoteModel> notesList = BlocProvider.of<ReadCubit>(context).notesList ?? [];
-
+       print(notesList.length);
         return Padding(
           padding: const EdgeInsets.all(16.0),
           child: ListView.builder(
             itemCount: notesList.length,
             itemBuilder: (context, index) => BuildNoteItem(
-              noteModel: noteModel,
+              noteModel: notesList[index],
             ),
           ),
         );

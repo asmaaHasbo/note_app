@@ -57,6 +57,7 @@ class _NoteFormFieldState extends State<NoteFormField> {
                   color: Colors.lightBlueAccent.value
               );
               BlocProvider.of<AddNoteCubit>(context).addNoteFun(noteModel);
+
             }
             else{
               autoValidateMode = AutovalidateMode.always;
